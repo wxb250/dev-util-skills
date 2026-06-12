@@ -42,6 +42,7 @@ If the user asks "why not do it" or challenges an unfinished item, immediately r
 - Treat real SMS provider calls, production keys, paid APIs, external network gateways, live deployment, and customer data access as external blockers unless the user explicitly provides safe test credentials and approval.
 - User-visible problems outrank internal polish: raw errors, internal enum labels, infinite polling, broken copy, stale success claims, or visible developer terms should be fixed or clearly escalated before broad refactors.
 - Documentation must follow code reality. If code, API docs, delivery docs, and test reports disagree, classify it as Reality Drift and resolve or report the mismatch.
+- When completion depends on runtime evidence, activity logs, audit logs, evidence pages, reports, dashboards, or orchestration/run history, use `runtime-evidence-closure-check` to verify the producer-to-consumer loop before making the completion decision.
 - A slow or silent review worker is not a permanent blocker. Wait only for the agreed threshold, then close or mark it as "review not returned" and continue with available evidence.
 - Do not call a task complete solely because a worker said it is done. Confirm expected files, diffs, validation output, and role boundaries.
 
@@ -76,6 +77,11 @@ Completion decision:
 ```
 
 Never hide unrun verification inside a success summary. If browser, container, or external integration evidence is missing, say whether it is locally runnable and what should happen next.
+
+## Scripts
+
+- `scripts/task_ledger_check.py --template` prints a JSON task-ledger template.
+- `scripts/task_ledger_check.py ledger.json --completion-gate` fails if any local-doable item remains unfinished or any `done` item lacks evidence.
 
 ## References
 

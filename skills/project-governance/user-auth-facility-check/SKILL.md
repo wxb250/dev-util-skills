@@ -41,6 +41,11 @@ Before calling auth infrastructure complete, collect evidence at three layers:
 
 If a browser check reveals overlap, hidden buttons, clipped inputs, or invisible blockers, hand the visual defect to `frontend-ui-polish-specialist` rather than treating it as an auth-contract decision.
 
+## Scripts
+
+- `scripts/auth_facility_check.py --template` prints a reusable auth evidence template.
+- `scripts/auth_facility_check.py auth-evidence.json` checks required login, recovery, logout, account-switching, copy, and browser evidence according to the declared auth capabilities.
+
 ## Common Misses
 
 - Shipping login/register without forgot password or another documented recovery route.

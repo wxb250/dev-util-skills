@@ -40,6 +40,9 @@ Stop condition: <when to ask the user or escalate>
 - Frontend experience:
   `ui-ux-pro-max -> frontend-ui-polish-specialist -> playwright/playwright-interactive -> frontend-critical-flow-acceptance -> autonomous-development-governor`
 
+- Runtime evidence, reports, logs, or orchestration views:
+  `autonomous-development-governor -> runtime-evidence-closure-check -> frontend-critical-flow-acceptance -> autonomous-development-governor`
+
 - Multi-worker development:
   `autonomous-development-governor -> multi-session-project-coordinator -> domain/frontend/test/doc skills -> autonomous-development-governor`
 

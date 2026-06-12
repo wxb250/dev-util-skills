@@ -1,0 +1,5 @@
+interface:
+  display_name: "Runtime Evidence Closure Check"
+  short_description: "Verify evidence loops are real"
+  default_prompt: "Use $runtime-evidence-closure-check to verify real actions produce stored, queryable, and visible runtime evidence before accepting evidence pages, reports, dashboards, logs, or orchestration views."
+

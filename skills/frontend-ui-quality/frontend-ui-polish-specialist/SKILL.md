@@ -112,6 +112,8 @@ Before claiming UI polish is complete:
 - Confirm no new hardcoded design system appears: no random colors, ad hoc component variants, unrelated font changes, or new icon families.
 - If screenshots reveal visual defects, fix them before final delivery.
 
+Optional script: run `scripts/visual_collision_probe.js --url <local-url>` when Playwright is available to detect obvious overflow, overlap, and center-point blockers across desktop and mobile viewports.
+
 ## Common Mistakes
 
 - Rebuilding local components from scratch instead of using the existing component library.

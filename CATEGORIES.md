@@ -5,6 +5,7 @@
 - `architecture-freeze-check`：实现前检查角色、流程、边界和交付结构，降低后续大重构风险。
 - `redesign-risk-check-zh`：中文 redesign 风险检查。
 - `autonomous-development-governor`：自动判断开发任务应继续、本地验证、阻断还是收口完成。
+- `runtime-evidence-closure-check`：检查运行记录、证据页、报表和编排视图是否由真实业务动作产生证据。
 - `user-auth-facility-check`：检查登录、注册、找回密码、会话恢复和账号切换隔离等鉴权基础设施。
 - `multi-session-project-coordinator`：多会话 worker 分工、调度、验收与集成。
 - `define-goal`：把模糊目标转成可衡量目标。

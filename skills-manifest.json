@@ -170,13 +170,13 @@
     {
         "category":  "frontend-ui-quality",
         "name":  "frontend-critical-flow-acceptance",
-        "sizeKB":  5.7,
+        "sizeKB":  10,
         "path":  "skills/frontend-ui-quality/frontend-critical-flow-acceptance"
     },
     {
         "category":  "frontend-ui-quality",
         "name":  "frontend-ui-polish-specialist",
-        "sizeKB":  8.5,
+        "sizeKB":  14.5,
         "path":  "skills/frontend-ui-quality/frontend-ui-polish-specialist"
     },
     {
@@ -284,7 +284,7 @@
     {
         "category":  "project-governance",
         "name":  "autonomous-development-governor",
-        "sizeKB":  11.3,
+        "sizeKB":  16.6,
         "path":  "skills/project-governance/autonomous-development-governor"
     },
     {
@@ -319,6 +319,12 @@
     },
     {
         "category":  "project-governance",
+        "name":  "runtime-evidence-closure-check",
+        "sizeKB":  7.8,
+        "path":  "skills/project-governance/runtime-evidence-closure-check"
+    },
+    {
+        "category":  "project-governance",
         "name":  "ticket-breakdown",
         "sizeKB":  1.2,
         "path":  "skills/project-governance/ticket-breakdown"
@@ -326,7 +332,7 @@
     {
         "category":  "project-governance",
         "name":  "user-auth-facility-check",
-        "sizeKB":  4,
+        "sizeKB":  7.8,
         "path":  "skills/project-governance/user-auth-facility-check"
     },
     {

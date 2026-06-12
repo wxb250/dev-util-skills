@@ -82,6 +82,8 @@ await browser.close();
 
 Adapt selectors and URLs to the project. Keep the check focused on the changed flow.
 
+For repeatable checks, write the path as a JSON scenario and run `scripts/critical_flow_smoke.js scenario.json`.
+
 ## Leader Rule For Multi-Worker Work
 
 When integrating worker output, do not accept "tests pass" as sufficient for critical frontend flows. Require at least one of:
