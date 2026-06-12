@@ -44,6 +44,8 @@ For each critical path, check the states that users actually experience:
 - User-facing copy: labels, status text, empty states, and success/error messages explain user tasks, results, and next steps without exposing AI generation or implementation details.
 - State preserved: drafts, answers, selected tabs, or submitted results remain when the flow promises they will.
 
+If visible, clickable, or responsive checks reveal overlap, clipping, cramped controls, or hidden actions, use `frontend-ui-polish-specialist` for the visual collision fix.
+
 Portal and overlay flows require an extra layer check:
 
 - Overlay has a lower z-index than content.

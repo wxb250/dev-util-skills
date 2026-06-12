@@ -170,13 +170,13 @@
     {
         "category":  "frontend-ui-quality",
         "name":  "frontend-critical-flow-acceptance",
-        "sizeKB":  5.6,
+        "sizeKB":  5.7,
         "path":  "skills/frontend-ui-quality/frontend-critical-flow-acceptance"
     },
     {
         "category":  "frontend-ui-quality",
         "name":  "frontend-ui-polish-specialist",
-        "sizeKB":  7.1,
+        "sizeKB":  8.5,
         "path":  "skills/frontend-ui-quality/frontend-ui-polish-specialist"
     },
     {
@@ -322,6 +322,12 @@
         "name":  "ticket-breakdown",
         "sizeKB":  1.2,
         "path":  "skills/project-governance/ticket-breakdown"
+    },
+    {
+        "category":  "project-governance",
+        "name":  "user-auth-facility-check",
+        "sizeKB":  4,
+        "path":  "skills/project-governance/user-auth-facility-check"
     },
     {
         "category":  "requirements-api-design",

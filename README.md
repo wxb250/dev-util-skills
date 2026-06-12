@@ -34,6 +34,7 @@ Copy-Item -Recurse .\dev-Util-skills\skills\frontend-ui-quality\frontend-critica
 - `architecture-freeze-check`：进入实现前冻结架构边界，减少后期大规模 redesign。
 - `redesign-risk-check-zh`：中文项目重构风险检查，适合需求仍在变化时使用。
 - `autonomous-development-governor`：复杂开发的自动决策、验证收口和阻断判断，避免能本地验证的事项被过早写成“未做”。
+- `user-auth-facility-check`：检查登录、注册、找回密码、会话恢复和账号切换隔离等鉴权基础设施。
 - `multi-session-project-coordinator`：多 worker 分工、集成与验收协调。
 - `frontend-ui-polish-specialist`：现有前端页面的视觉、布局、响应式和交互精修。
 - `api-contract-designer`：从需求或材料设计接口契约。
@@ -44,7 +45,7 @@ Copy-Item -Recurse .\dev-Util-skills\skills\frontend-ui-quality\frontend-critica
 
 | 分类 | 说明 |
 | --- | --- |
-| `project-governance` | 项目治理、目标定义、架构冻结、任务拆解、自动收口决策、多会话协调 |
+| `project-governance` | 项目治理、目标定义、架构冻结、任务拆解、鉴权设施检查、自动收口决策、多会话协调 |
 | `requirements-api-design` | 需求材料转设计、领域建模、API 契约与请求样例 |
 | `frontend-ui-quality` | 前端 UI 精修、关键流程验收、Playwright、Figma、截图 |
 | `github-collaboration` | GitHub 仓库阅读、CI 修复、PR 评论处理、Linear |

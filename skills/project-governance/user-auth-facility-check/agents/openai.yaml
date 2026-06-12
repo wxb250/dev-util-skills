@@ -1,0 +1,5 @@
+interface:
+  display_name: "User Auth Facility Check"
+  short_description: "Check auth facility completeness"
+  default_prompt: "Use $user-auth-facility-check to verify login, registration, recovery, session, and account-switching flows before claiming user authentication is complete."
+

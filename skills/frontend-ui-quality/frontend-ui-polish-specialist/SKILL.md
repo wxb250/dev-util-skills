@@ -56,6 +56,24 @@ Do not introduce a new UI library or icon set unless the user explicitly asks or
 5. Preserve product scope, information architecture, copy intent, data contracts, and backend behavior unless the user explicitly asks for more.
 6. Verify the result on at least one desktop and one mobile viewport. Use Playwright screenshots when a dev server or static preview is available.
 
+## Visual Collision Guard
+
+Treat overlap and obstruction as first-class polish defects across every UI surface, not as form-specific issues.
+
+Check for:
+
+- Controls, labels, helper text, badges, icons, loaders, error text, and action buttons overlapping or covering each other.
+- Inputs, segmented controls, filters, toolbars, table headers, sticky bars, cards, sidebars, modals, drawers, popovers, and toasts being clipped or squeezed until content becomes unreadable.
+- Invisible blockers such as overlays, sticky headers, backdrops, or absolute-positioned elements preventing expected clicks.
+- Dynamic states that change layout: long localized text, validation errors, loading labels, extra actions, empty states, success banners, pagination, and user-generated content.
+
+For compound controls such as input plus button, label plus control, filter plus action, status plus action, or table cell plus menu, prefer resilient layout over hard squeezing:
+
+- Use wrapping, vertical stacking, stable gaps, `min-width: 0`, `max-width`, intentional truncation, or grid/flex constraints.
+- Keep primary actions visible and reachable at desktop, narrow desktop, and mobile widths.
+- Preserve semantic labels and focus order when controls reflow.
+- Re-check hover, focus, disabled, loading, error, and success states after the layout fix.
+
 ## User-Facing Copy Principles
 
 When changing any text visible in the software UI, write for real users instead of developers, judges, demo presenters, or AI-tool operators.
@@ -90,6 +108,7 @@ Before claiming UI polish is complete:
 - Run the project's relevant lint, typecheck, build, or test command when available and proportional to the change.
 - Preview the touched UI if the project can run locally.
 - Check at least desktop and mobile widths; include tablet or narrow desktop when the layout suggests risk.
+- Exercise changed components with long text, validation errors, loading states, and extra actions when those states could affect size or wrapping.
 - Confirm no new hardcoded design system appears: no random colors, ad hoc component variants, unrelated font changes, or new icon families.
 - If screenshots reveal visual defects, fix them before final delivery.
 
